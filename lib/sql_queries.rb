@@ -2,6 +2,8 @@ def selects_all_female_bears_return_name_and_age
   "SELECT *
   FROM bears
   WHERE gender = female
+  union
+  SELECT name, age
   );"
 end
 
