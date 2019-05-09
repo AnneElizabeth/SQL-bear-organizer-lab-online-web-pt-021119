@@ -38,9 +38,9 @@ end
 def selects_most_prominent_color_and_returns_with_count
   "SELECT color
   FROM bears
-  COUNT color
+  COUNT(color)
   GROUP BY color
-  ORDER BY color
+  ORDER BY count(color)
   DESC
   LIMIT 1"
 end
